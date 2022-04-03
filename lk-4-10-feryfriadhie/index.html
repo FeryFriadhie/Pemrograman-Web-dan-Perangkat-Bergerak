@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Membuat Link</title>
+ 
+  
+  
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <a name="atas"></a>
+       <li><a href ="#">Home</li></a>
+       <li><a href="about.html" target="_blank">About</a>
+       </li>
+       <li><a href="contact.html"target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+ <section>
+   <h1>Featured post</h1>
+ <nav>
+   <ul>
+     <li><a href="#post1">Bagian 1  </a></li>
+     <li><a href="#post2">Bagian 2
+     </a></li>
+     <li><a href="#post3">Bagian 3</a
+     ></li>
+     <li><a href="#post4">Bagian 4</a></li>
+     <li><a href="#post5">Bagian 5</a
+     ></li>
+     
+   </ul>
+ </nav>
+ <div id ="article-list" align="justify">
+ <article>
+   <a name="post1"><h3>Bagian 1</h3></a>
+   <p align="justify">
+     <b> A. Kompetensi Dasar</b>
+   </p>
+<p align="justify">3.5.   Menerapkan format kaitan pada halaman web</p>
+<p align="justify">4.5.	Membuat kode html untuk menampilkan format kaitan pada halaman web</p>
+ </article>
+ <article>
+   <a name="post2"><h3>Bagian 2</h3></a>
+   <p align="justify">
+     <b> B. Tujuan</b>
+   </p>
+<p align="justify">1. Peserta didik dapat menerapkan format kaitan pada halaman web</p>
+<p align="justify">2. Peserta didik dapat membuat kode html untuk menampilkan format kaitan pada halaman web</p>
+ 
+ </article>
+ <article>
+   <a name="post3"><h3>Bagian 3</h3></a>
+   <p align="justify">
+   <b>C. Landasan Teori</b>
+   </p>
+   
+<p align="justify">
+  <b> 1.Anatomi hyperlink</b>
+</p>
+<p align="justify">Berdasarkan lokasi atau alamat dokumen yang diakses,link pada HTML dibedakan menjadi tiga jenis, yaitu link absolute, link relative, dan link ke bagian dokumen tertentu. Jadi, perbedaannya terletak pada nilai atribut HREF-nya saja.</p>
+ <p align="justify">a. Link absolute</p>
+<p align="justify">Link yang akan menunjuk ke halaman dari situs web lain. Penulisan alamatnya harus lengkap, contoh:
+<b><a href=http://www.w3.org/>W3</a></b>
+Pada contoh diatas link akan menuju ke situs web http://www.w3.org/.</p>
+<p align="justify">b. Link relative</p>
+<p align="justify">Link yang tujuannya mengarah ke dokumen-dokumen lain yang masih berada di dalam satu situs web yang sama (komputer yang sama). Penulisan alamat tujuannya pun tidak perlu ditulis secara lengkap, cukup nama dokumennya saja dan nama direktorinya (jika ada).</p>
+<p align="justify">Contoh:<br>
+<b><a href=”kontak.html”>Kontak</a></b><br>
+-> digunakan untuk memanggil file html dalam satu direktori yang sama</p>
+<p align="justify"><b><a href=”images/jeep/sahara.jpg”>Lihat Foto Jeep Wrangler Sahara</a></b><br>
+-> digunakan untuk memanggil file html dalam direktori yang berbeda</p>
+
+<p align="justify">Selain berupa teks, gambar juga dapat dijadikan sebagai link. Konsepnya sebenarnya sama saja dengan link berupa teks, bedanya hanya perlu mengganti teks yang dijadikan sebagai  link dengan tag <img>.</p>
+<p align="justify">Contoh:
+Format link berupa teks:<br>
+<b><a href=”dokumenlain”>teks link</a></b><br>
+Format link berupa gambar:<br>
+<b><a href=”dokumenlain”><img src=”NamaFileGambar” /></a></b></p>
+
+<p align="justify"> C. Link ke bagian dokumen tertentu (internal link)</p>
+<p align="justify">Format link antar isi pada suatu halaman web biasa disebut juga dengan link dalam satu halaman (internal link). Misalnya membuat tautan link untuk mengarah ke atas, ke tengah, atau ke bawah. Link ini dibuat untuk dokumen panjang sekali, sehingga apabila ditampilkan dalam browser akan mengharuskan pengguna melakukan scroll layar berulang-ulang.</p>
+<p align="justify">Navigasi untuk penelusuran dokumen dapat dimudahkan dengan membuat link atau bagian. Caranya adalah menandai setiap bagian tersebut dengan memberinya nama.</p>
+<p align="justify">Cara membuat link dalam satu halaman:</p>
+<p align="justify">1. Menentukan nama target
+Pilih bagian artikel yang ingin dijadikan sebagai target link, bisa berupa paragraph, subjudul, kalimat, atau kata yang diinginkan. Kemudian buat nama atau id pada kata tersebut dengan satu nama variabel. Pemberian nama tidak menggunakan spasi.</p>
+Contoh 1:<br>
+<div id= “bab3”> BAB III</div>
+Contoh 2:<br>
+<a name= “bab4”>BAB IV</a><br>
+<p align="justify">2. Membuat link target
+Buatlah kalimat atau kata yang ingin dijadikan sebagai link yang akan ditujuan ke target link.</p>
+Contoh:<br>
+<a href = “#bab3”> Ke Bab III </a><br>
+<a href = “#bab4> Ke Bab IV </a><br>
+ </article>
+ <article>
+   <a name="post4"><h3>Bagian 4</h3></a>
+   <p align="justify"><b>2. Format link antar halaman web untuk membentuk site map</b>
+   </p>
+   <p align="justify">Link merupakan cara untuk membuka atau memanggil halaman web atau file tertentu. Link merupakan tag yang sangat penting dalam penggunaan HTML, karena link dapat membedakan antara dokumen HTML dan dokumen teks biasa. Setiap halaman, file, direktori, dan lokasi di internet, selalu memiliki alamat URL (Uniform Resource Locator) sendiri-sendiri yang menuju pada web server di internet. Hampir semua link menggunakan teks sebagai penghubungnya.
+</p>
+<p align="justify">Teks yang berada di antara tag <a> </a> akan menampilkan teks dengan garis bawah dan warna standar biru. Sebenarnya warna ini dapat diubah dengan menambahkan atribut link, alink, dan vlink pada tag <body>.
+Atribut alink digunakan untuk memberi warna pada link saat mouse di klik dan vlink digunakan untuk memberikan warna pada link yang sudah dikunjungi.</p>
+<p align="justify">Contoh:</p>
+<p align="justify">
+<body link = “green” alink = “red” vlink = “pink”></body></p>
+<p align="justify">Selain mengatur warna kita juga dapat menghilangkan tanda garis bawah pada suatu link dengan membuat sintaks beikut:</p>
+<p align="justify"><a href = http://www.yahoo.com style = “text-decoration:none”> ke Yahoo </a></p>
+ </article>
+ <article>
+   <a name="post5"><h3>Bagian 5</h3></a>
+   <p align="justify"><b>3. Format target link, email, telepon, sms, dan download
+</b></p>
+<p align="justify">a. Format target link<br>
+Jika link di klik maka browser akan menampilkan halaman yang dituju oleh link tersebut. Ada 2 macam tampilan oleh browser dalam memunculkan halaman tujuan tersebut.</p>
+<p align="justify">1.) Pertama, ditampilkan pada jendela yang sama sehingga halaman tempat link itu ditutup dan digantikan oleh halaman yang dituju, dan ini merupakan cara pemunculan default.</p>
+<p align="justify"> 2.) Kedua, ditampilkan pada jendela baru sehingga akan muncul jendela baru untuk menampilkan halaman yang dituju.</p>
+<p align="justify">Dalam pembuatan link ini harus ditambahkan atribut TARGET = “_blank” dalam tag <a href>, sehingga penulisannya adalah sebagai berikut:<br>
+<a href = “NamaDokumen” target = “NamaTarget”> Teks / Gambar </a><br>
+Keterangan:</p>
+<p align="justify">- NamaDokumen : nama dokumen yang akan ditampilkan jika link di klik<br>
+-NamaTarget : target atau tempat tujuan dari dokumen yang akan ditampilkan</p>
+<p align="justify">Value atau nilai dari target bisa bernilai _blank maupun nama frame (jika layar web anda menggunakan frame).<br> Berikut beberapa nilai target yang dapat diisikan pada link:
+</p>
+<p align="justify">1.)_blank : halaman yang dipanggil akan muncul pada jendela baru<br>
+2.)Top : halaman yang dipanggil akan mengisi penuh jendela yang sama, meskipun tadinya ada frame.<br>
+3.)_self : halaman yang dipanggil akan mengisi tempat yang sama bila link tersebut dalam sebuah frame, maka halaman yang dipanggil akan mengisi frame tersebut.<br>
+4.)_parent : halaman yang dipanggil akan mengisi frame set satu tingkat lebih tinggi dari frame tempat link yang bersangkutan.</p>
+<p align="justify">b. Link email</p>
+<p align="justify">Link email dapat digunakan untuk mengirim ke alamat email. Jika link ini di klik, maka akan membuka jendela pengiriman email dari program email yang terinstal pada computer (misalnya Microsoft Outlook). Pada kotak tujuan email akan tercantum alamat email tujuan. Contohnya, link yang langsung menuju ke alamat email, dengan penulisan kode seperti berikut:</p>
+<p align="justify"><a href=“mailto: rusdian7@gmail.com?subject=judulnya?”> Kirim email </a></p>
+<p align="justify">C. Link telepon</p>
+<p align="justify">Link telepon dapat digunakan untuk melakukan panggilan telepon. Jika link ini di klik, maka akan melakukan panggilan telepon pada nomor tujuan. Contoh penulisan kodenya seperti berikut:</p>
+<p align="justify"><a href=“tel:/0851234567890”> klik disini untuk menghubungi saya </a></p>
+<p align="justify">d. Link SMS</p>
+<p align="justify">
+Link SMS dapat digunakan untuk melakukan pengiriman pesan SMS pada nomor tujuan. Jika link di klik, maka akan melakukan pengiriman SMS pada nomor tujuan. Contoh penulisan kodenya seperti berikut:</p>
+<p align="justify"><a href=“sms:0851234567890&body=Pendaftaran”> SMS ke saya: </a></p>
+<p align="justify">e.Link Download</p>
+<p align="justify">Link download digunakan untuk pengambilan file dari server atau yang lebih di kenal dengan istilah download. Link ini bertujuan untuk file-file yang bukan format file web, yang tidak dapat ditampilkan oleh browser. Seperti aplikasi EXE, File compress ZIP, dokumen DOC, XLS, dll. Jika file tersebut di klik maka akan muncul kotak dialog yang menanyakan apakah anda ingin menyimpan file tersebut dalam hardisk atau membukanya dengan program yang terinstal pada computer yang digunakan. Contoh penulisan kodenya sebagai berikut:</p>
+<p align="justify"><a href=“modul”_web.doc”> download </a>
+</p>
+   <p>klik <a href="images/dokumen.docx" style="text-decoration: none">DOWNLOAD</a> untuk mengunduh lampiran</p>
+ </article>
+ </div>
+ </section>
+ <p><a href="#atas">Kembali ke Atas</a></p>
+ 
+ 
+  
+  
+</body>
+</html>
