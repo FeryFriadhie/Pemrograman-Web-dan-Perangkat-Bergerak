@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan switch</title>
+</head>
+<body>
+    <script language="JavaScript">
+        function tanyabulan()
+        {
+            var bulan = parseFloat(document.fform.ibulan.value);
+            var namabulan = " ";
+            switch (bulan){
+                case 1 : namabulan = "Bulan ke 1 adalah = Januari";break;
+                case 2 : namabulan = "Bulan ke 2 adalah = Februari";break;
+                case 3 : namabulan = "Bulan ke 3 adalah = Maret";break;
+                case 4 : namabulan = "Bulan ke 4 adalah = April";break;
+                case 5 : namabulan = "Bulan ke 5 adalah = Mei";break;
+                case 6 : namabulan = "Bulan ke 6 adalah = Juni";break;
+                case 7 : namabulan = "Bulan ke 7 adalah = Juli";break;
+                case 8 : namabulan = "Bulan ke 8 adalah = Agustus";break;
+                case 9 : namabulan = "Bulan ke 9 adalah = September";break;
+                case 10 : namabulan = "Bulan ke 10 adalah = Oktober";break;
+                case 11 : namabulan = "Bulan ke 11 adalah = November";break;
+                case 12 : namabulan = "Bulan ke 12 adalah = Desember";break;
+                default : namabulan = "Anda Salah Mengisi";
+            }
+            alert(namabulan);
+        }
+    </script>
+    <form name="fform">
+        <h2>Penggunaan percabangan switch</h2><hr>
+        <pre>
+            Masukan Nomor Bulan [1-12] : <input type="text" size="2" name="ibulan">
+            <input type="button" value="Hitung" onclick="tanyabulan()">
+            <input type="reset" value="Ulang">
+        </pre>
+    </form>
+</body>
+</html>
