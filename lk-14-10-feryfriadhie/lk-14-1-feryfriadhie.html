@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Membuat Marque pada status bar</title>
+</head>
+<body bgcolor="lightblue"><center>
+    <p><font color="orange" size="5">Latihan Marque pada JavaScript</p>
+<body onload="p()">
+
+        <script language="JavaScript">
+            var pesan = "Hallo Friends .... Apa Kabar? ";
+            var pesan2 = "Welcome to my website ";
+            function p()
+            {
+                document.basis.kotak.value=pesan;
+                pesan=pesan.substr(1,pesan.length)+pesan.substr(0,1);
+                pesan2=pesan2.substr(1,pesan2.length)+pesan2.substr(0,1);
+                window.status=pesan2;
+                setTimeout("p()",100);
+            }
+        
+        
+        </script>
+        <form method="post" name="basis">
+            <input type="text" name="kotak" size="20">
+        </form>
+    
+</body>   
+</body>
+</html>
