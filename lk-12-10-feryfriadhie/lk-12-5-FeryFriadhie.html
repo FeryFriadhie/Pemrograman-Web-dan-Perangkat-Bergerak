@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan Objek String</title>
+</head>
+<body bgcolor="lightblue">
+    <h3>Latihan Objek String</h3>
+   <script language="JavaScript">
+       nama ="Shafana Vevica";
+       panjang=nama.length;
+       n=nama.substring(1,4);
+       besar=nama.toUpperCase()
+       namakulink=nama.link('shafa.html');
+       document.writeln("Namaku adalah = "+ nama +" <br>");
+       document.writeln("Panjang namaku adalah "+ panjang +" karakter <br>");
+       document.writeln("method BIG = "+ nama.big() +"<br>");
+       document.writeln("method SMALL  = "+ nama.small() +"<br>");
+       document.writeln("method SUB = "+ nama.sub() + "<br>");
+       document.writeln("method BOLD = "+ nama.bold() + "<br>");
+       document.writeln("method ITALIC = "+ nama.italics() +"<br>");
+       document.writeln("method FONTCOLOR = "+ nama.fontcolor("red") + "<br>");
+       document.writeln("method LOWERCASE = "+ nama.toLowerCase() + "<br>");
+       document.writeln("method UPPERCASE = "+ besar +"<br>");
+       document.writeln("method SUBSTRING = "+ n +"<br>");
+       document.writeln("method STRIKE = "+ nama.strike() + "<br>");
+       document.writeln("method CharAT = "+ nama.charAt(3) + "<br>");
+       document.writeln("method Link = "+ namakulink + "<br>");
+       document.writeln("Index Huruf c = "+ nama.indexOf("c") + "<br>");
+       awal=nama.indexOf("V");
+       akhir=nama.lenght;
+       document.writeln("Kata yang tersisa = "+ nama.substring(awal,akhir) + "<br>");
+   </script> 
+</body>
+</html>
