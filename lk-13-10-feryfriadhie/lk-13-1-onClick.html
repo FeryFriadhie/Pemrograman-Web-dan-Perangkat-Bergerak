@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event OnClick</title>
+</head>
+<body>
+    <script language="JavaScript">
+        function warna(pilihan)
+    {
+        alert("Anda Memilih warna "+ pilihan);
+        document.bgColor = pilihan;
+    }
+    
+    </script>
+
+    <h1 align="center">Latihan Event Onclick</h1>
+    <hr width ="500" color="black" noshade>
+    <h3 align="center">Pilih warna favorit anda.</h3>
+    <center>
+        <form>
+            <input type="button" value="Biru" onClick="warna('lightblue')">
+            <input type="button" value="Pink" onClick="warna('pink')">
+            <input type="button" value="Coklat" onClick="warna('burlywood')">
+            <input type="button" value="Kelabu" onClick="warna('darkgray')">
+            <input type="button" value="Oranye" onClick="warna('peachpuff')">
+            <input type="button" value="Putih" onClick="warna('white')">
+
+        </form>
+        <form>
+            <img name="coolfan"src="images/fanoff.png" alt="" width=61 height=72><br><br>
+            <input type="button" value="off" onclick="coolfan.src = 'images/fanoff.png'">
+            <input type="button" value="on" onclick="coolfan.src = 'images/fanon.gif'">
+        </form>
+    </center>
+    <hr width="500" color="black" noshade>
+
+    
+</body>
+</html>

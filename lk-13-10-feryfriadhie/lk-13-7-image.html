@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latihan Image</title>
+</head>
+
+<body>
+  <script language="JavaScript">
+    var num = 1
+    img1 = new Image ()
+    img1.src = "images/pic1.png"
+    img2 = new Image ()
+    img2.src = "images/pic2.jpg"
+    img3 = new Image ()
+    img3.src = "images/pic3.jpg"
+    img4 = new Image ()
+    img4.src = "images/pic4.png"
+    img5 = new Image ()
+    img5.src = "images/pic5.png"
+    img6 = new Image ()
+    img6.src = "images/pic6.png"
+    
+    function slideshow (x)
+    {
+      num = num + x
+      if(num==7)
+      {
+        num = 1
+      }
+      if(num==0)
+      {
+        num=6
+      }
+      document.mypic.src = eval("img"+ num +".src")
+    }
+    
+    
+  </script>
+  <center>
+    <img src="images/pic1.png" name="mypic" border="0" height="200" width="150">
+    <p>
+      <a href="JavaScript:slideshow (-1)">Previous</a>
+      <a href="JavaScript:slideshow(1)">Next</a>
+    </p>
+  </center>
+</body>
+
+</html>

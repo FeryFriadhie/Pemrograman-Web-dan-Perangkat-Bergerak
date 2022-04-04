@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event MouseOver dan MouseOut</title>
+</head>
+<body>
+    <script language="JavaScript">
+    function g1()
+    {
+        document.f.imgfan.src="images/fanon.gif"
+    }
+    function g2()
+    {
+        document.f.imgfan.src="images/fanoff.png"
+    }
+
+    
+    </script>
+    </script>
+    <h1 align="center">Latihan Event OnMouseOver dan On MouseOut</h1>
+    <hr width="600" color="black" noshade size="10">
+    <font face="arial">
+        <h3 align="center">SELAMAT DATANG</h3> 
+        <center>
+            <form name="f">
+                <img  name="logo" src="images/logo1.gif" alt="logo" onmouseover="document.logo.src='images/logo2.gif'; window.status = 'Motto Jawa Barat'" 
+                onmouseout="document.logo.src='images/logo1.gif'; window.status='Gemah Ripah Repeh Rapih'">
+                <h4 align="center">Kalo kepanasan tunjuk kipas angin saja</h4>
+                <a href="lk-13-1-onClick.html" onmouseover="g1()" onmouseout="g2()">
+                  <image name="imgfan" src="images/fanoff.png" width=61 height=72 border=0>
+                </a>
+                <p>
+                  <a href="http://www.google.com" onmouseover="document.bgColor='#ffcc00';
+                  onmouseover=window.status='Ke Website Google.Com'; return true">Google.Com</a><br>
+                  <a href="http://if.unikom.ac.id" onmouseover="window.status='Oh, jangan deket-deket..';
+                  return true" onmouseout="alert('Nah gitu dong'); return true">RPL SMKN 1 CIAMIS</a>
+                  <hr width="600" color="black" noshade size="2"
+                </p>
+            </form>
+        </center>
+    
+</body>
+</html>

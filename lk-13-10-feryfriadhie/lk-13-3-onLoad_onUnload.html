@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event OnLoad dan OnUnload</title>
+</head>
+<body Onload="tanggal()" OnUnload="tutup()">
+    <script language="JavaScript">
+        // hide from browser that do not understand javascript
+
+        function tanggal()
+        {
+            var d = new Date();
+            var y = d.getFullYear();
+            var m = d.getMonth();
+            var d = d.getDate();
+            var t = d + '/' + m + '/' + y + ' ';
+            defaultStatus = " Anda datang pada tanggal "+ t + ".";
+            alert("Selamat datang teman \nsilahkan masuk ke Websiteku");
+        }
+
+        function timer()
+        {
+            var d = new Date();
+            var jam = d.getHours();
+            var menit = d.getMinutes();
+            var detik = d.getSeconds();
+            var strwaktu = (jam < 10 )?"0"+jam :jam;
+            strwaktu += (menit < 10 )?"0"+menit:" : "+menit;
+            strwaktu += (detik < 10 )?"0"+detik:" : "+detik;
+            document.f.txtwaktu.value="          "+strwaktu;
+            setTimeout("timer()", 200);
+
+        }
+
+        function tutup()
+        {
+            window.alert("Terimaksih Telah Berkunjung \n Jangan lupa datang kembali ya...");
+        }
+        // end heading
+    
+    </script>
+    <h1 align="center">Latihan Evet OnLoad dan OnUnLoad</h1>
+    <hr width="600" color="black" noshade size="10">
+    <font face="arial">
+    <h3 align="center">SELAMAT DATANG</h3>
+    <center>
+        <form name="f">
+            <h4 align="center">Sekarang Menunjukan Jam</h4>
+            <input type="text" size="16" name="txtwaktu">
+            <hr width="600" color="black" noshade size="2">
+        </form>
+        <script language="JavaScript">timer()</script>
+    </center>
+
+    
+</body>
+</html>

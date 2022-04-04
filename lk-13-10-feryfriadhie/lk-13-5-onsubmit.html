@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Event OnSubmit</title>
+</head>
+
+<body>
+  <script language="JavaScript">
+    function cari()
+    {
+      var kata = document.formcari.keyword.value;
+      var hasil = "http://www.google.com/search?q =" + kata;
+      window.open(hasil, 'google', config='height=500, width=750 scrollbars=yes location=yes')
+    }
+  </script>
+  <form name="formcari" onsubmit="cari()">
+    <center>
+      <table border="0">
+        <tr>
+          <td colspan="4" bgcolor="orange">
+            <h1 align="center"> S e a r c h - E n g i n e </h1>
+            <hr color="black" size="4">
+          </td>
+        </tr>
+        <tr>
+          <td><b>Cari Pakai</b></td>
+          <td><img src="images/google.gif" alt="logo google" /></td>
+          <td><input type="text" name="keyword" size="40"></td>
+          <td><input type="submit" value="Cari ... !!">
+              <input type="reset" value="Ulang"</td>
+        </tr>
+        <tr>
+          <td colspan="4" bgcolor="orange">
+            <hr color="black" size="4"/>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </form>
+
+</body>
+
+</html>
