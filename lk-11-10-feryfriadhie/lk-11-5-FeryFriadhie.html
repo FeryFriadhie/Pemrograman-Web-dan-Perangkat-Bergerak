@@ -1,0 +1,50 @@
+
+<html>
+<head><title>Perhitungan Bunga</title></head>
+<body>
+<script language= "JavaScript">
+function hitung()
+
+{
+  var saldo=parseFloat(document.fform.osaldo.value);
+  var bunga=parseFloat(document.fform.obunga.value)/100;
+  var waktu=parseFloat(document.fform.owaktu.value);
+
+  var hasil="";
+
+  for(i=1;i<=waktu;i++)
+    {
+      saldo=saldo+(saldo*bunga);
+      hasil=hasil+"Saldo Bulan "+i+"= Rp. "+saldo+"\n";
+    }
+
+
+  document.fform.ohasil.value=hasil;
+
+}
+</script>
+<div style="border: 1px solid #eee; height: 400px; overflow: auto; padding: 10px; width: 700px;">
+<form name="fform">
+<h2><center>perhitungan saldo dan bunga</center></h2>
+<br>
+<pre>
+Data Input   :
+
+Saldo        <input type="text" size=20 name="osaldo"><br>
+Bunga        <input type="text" size=11 name="obunga"> % <br>
+Waktu        <input type="text" size=7 name="owaktu"> Bulan <br>
+</pre>
+<hr>
+<input type="button" value="Hitung" onclick="hitung()">
+<input type="reset" value="Reset">
+<pre>
+Hasil Perhitungan      :
+<div style="border: 1px solid #eee; height: 100px; overflow: auto; padding: 10px; width: 700px;">
+<textarea name="ohasil" rows="19" cols="83">Hasil Perhitungan akan muncul disini</textarea>
+</div>
+</pre>
+</form>
+<center> <font color="green" face="comic sans ms"> <b>Fery Friadhie XI RPL<b> </font></center>
+</div>
+</body>
+</html>
